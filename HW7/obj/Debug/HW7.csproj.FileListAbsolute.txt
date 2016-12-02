@@ -1,0 +1,5 @@
+c:\users\drleavsy\documents\visual studio 2015\Projects\HW7\HW7\bin\Debug\HW7.exe.config
+c:\users\drleavsy\documents\visual studio 2015\Projects\HW7\HW7\bin\Debug\HW7.exe
+c:\users\drleavsy\documents\visual studio 2015\Projects\HW7\HW7\bin\Debug\HW7.pdb
+c:\users\drleavsy\documents\visual studio 2015\Projects\HW7\HW7\obj\Debug\HW7.exe
+c:\users\drleavsy\documents\visual studio 2015\Projects\HW7\HW7\obj\Debug\HW7.pdb
