@@ -44,9 +44,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BubbleSorter.cs" />
+    <Compile Include="Buffer.cs" />
+    <Compile Include="IBuffer.cs" />
+    <Compile Include="IMyQueue.cs" />
+    <Compile Include="IMyStack.cs" />
     <Compile Include="InsertionSort.cs" />
     <Compile Include="IPrintable.cs" />
     <Compile Include="ISorter.cs" />
+    <Compile Include="MyQueue.cs" />
+    <Compile Include="MyStack.cs" />
     <Compile Include="Sorter.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -17,6 +17,5 @@ namespace HW7
         public abstract bool swapArr(T [] arrayNew, int sizeIn, int inx1, int inx2);
         public abstract string Print();
         public abstract void Sort();
-        //public abstract int CompareTo(T other);
     }
 }

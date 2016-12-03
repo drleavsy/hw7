@@ -18,17 +18,7 @@ namespace HW7
             ind2 = 1; // start comparison from the 2nd element
             ind_last = 0;
         }
-/*
-        public override void Print()
-        {
-            Console.Write("[ ");
-            foreach (var item in arrayA)
-            {
-                Console.Write(item.ToString() + " ");
-            }
-            Console.WriteLine("]");
-        }
-        */
+
         public override void Sort()
         {
             ind_last = sizeA + 1; // initilize last first sorted index for buble sort: index until which sorting is done, above this index array will be sorted
@@ -71,7 +61,7 @@ namespace HW7
                     return true;
                 }
             }
-            else                              // if 2nd element is greater than 1st one: return false, no swap
+            else // if 2nd element is greater than 1st one: return false, no swap
             {
                 return false;
             }
@@ -86,22 +76,23 @@ namespace HW7
                 SortCars test_obj = arrayA[0] as SortCars;
                 if (test_obj != null)
                 {
-                    Console.Write("[\n ");
+                    temp = "\n[\n";
                     for (int i = 0; i < sizeA; i++)
                     {
                         test_obj = arrayA[i] as SortCars;
                         temp += test_obj.Print() + "\n";
                     }
-                    Console.WriteLine("]");
+                    temp += "]\n";
                 }
-            }
-            else {
-                Console.Write("[ ");
-                foreach (var item in arrayA)
+                else 
                 {
-                    temp += item.ToString() + " ";
+                    temp = "\n[";
+                    foreach (var item in arrayA)
+                    {
+                        temp += item.ToString() + " ";
+                    }
+                    temp += "]\n";
                 }
-                Console.WriteLine("]");
             }
             return temp;
         }

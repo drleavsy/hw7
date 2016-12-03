@@ -17,17 +17,6 @@ namespace HW7
             ind2 = 0; // start comparison from the 2nd element
         }
 
-        public override string Print()
-        {
-            Console.Write("[ ");
-            foreach (var item in arrayA)
-            {
-                Console.Write(item.ToString() + " ");
-            }
-            Console.WriteLine("]");
-            return "0";
-        }
-
         public override void Sort()
         {
             while (ind2 < sizeA)
@@ -40,10 +29,6 @@ namespace HW7
                     ind2--;
                 }
             }
-            Console.Write("Insertion sorted array:   ");
-            Print();
-            Console.WriteLine("Press ENTER to quit");
-            Console.Read();
         }
 
         public override bool swapArr(T [] arrayIn, int sizeIn, int inx1, int inx2)
@@ -67,6 +52,35 @@ namespace HW7
                 return false;
             }
             return false;
+        }
+        public override string Print()
+        {
+            string temp = null;
+            if (arrayA != null)
+            {
+                //SortCars [] test_obj = new SortCars[sizeA];
+                SortCars test_obj = arrayA[0] as SortCars;
+                if (test_obj != null)
+                {
+                    temp = "\n[\n ";
+                    for (int i = 0; i < sizeA; i++)
+                    {
+                        test_obj = arrayA[i] as SortCars;
+                        temp += test_obj.Print() + "\n";
+                    }
+                    temp += "]\n";
+                }
+                else
+                {
+                    temp = "\n[ ";
+                    foreach (var item in arrayA)
+                    {
+                        temp += item.ToString() + " ";
+                    }
+                    temp += "]\n";
+                }
+            }
+            return temp;
         }
     }
 }
